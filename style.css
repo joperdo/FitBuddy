@@ -49,7 +49,19 @@ header a{
     text-decoration: none;
 }
 
+.diaryt h1{
+    color: #225C5C;
+    font-size: 20px;
+    text-decoration: none;
+}
+
 .training h1{
+    color: #00C595;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.trainingd h1{
     color: #225C5C;
     font-size: 20px;
     text-decoration: none;
