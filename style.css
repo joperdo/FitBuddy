@@ -17,7 +17,6 @@ html, body {
 }
 
 nav {
-    display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     justify-content: space-between;
     align-items: center;
@@ -30,6 +29,65 @@ nav {
 
 .logo img{
     width: 109px;
+}
+
+header{
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+    text-align: center;
+}
+
+header a{
+    text-decoration: none;
+}
+
+.diary h1{
+    color: #00C595;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.training h1{
+    color: #225C5C;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+header .slider-scrollbar{
+    height: 1px;
+    width: 200%;
+    display: flex;
+    align-items: center;
+}
+
+.slider-scrollbar .scrollbar-tracks{
+    height: 1px;
+    width: 100%;
+    background: #2B7A7A;
+    position: relative;
+    border-radius: 40px;
+}
+
+.slider-scrollbar .scrollbar-diary{
+    position: absolute;
+    height: 3px;
+    width: 40%;
+    background: #0075FF;
+    border-radius: inherit;
+    top: -3px;
+    left: 5%;
+}
+
+.slider-scrollbar .scrollbar-training{
+    position: absolute;
+    height: 3px;
+    width: 40%;
+    background: #0075FF;
+    border-radius: inherit;
+    top: -3px;
+    right: 5%;
 }
 
 .section-pesquisar{
@@ -79,7 +137,20 @@ nav {
 .filtro img{
     width: auto;
     height: auto;
-    margin-left: 10px;
+    margin-left: 8px;
+}
+
+add{
+    position: fixed;
+    right: 2%;
+    bottom: 10%;
+    z-index: 1000;
+}
+
+add button{
+    background: none;
+    border: none;
+    cursor: pointer;
 }
 
 tab{
@@ -96,6 +167,7 @@ tab{
     bottom: 0;
     transform: translateX(-50%);
     left: 50%;
+    z-index: 2000;
 }
 
 .icons {
